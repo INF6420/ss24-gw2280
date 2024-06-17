@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #faadbb;
+    color: #faadbb;
+    font-family: Arial;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+    font-size: larger;
+    color: #e87693;
+    background-image: url();
+}
+
+nav {
+    background-color: #d48795;
+    color:#d48795;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-right: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color:#660F1E;
+
+}
+
+nav a:hover {
+     color: white;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.main-menu {
+    position: relative;
+
+}
+
+.home-image{
+    position: relative;
+
+}
+
+.home-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.home-text{
+    position: absolute;
+    top: 40%;
+    color: #660F1E;
+    padding: 10px;
+    font-size: 185%;
+    width: 20px;
+    font-style: italic;
+    font-stretch: expanded;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 225px;
+    margin-top: -100px;
+    text-align: center;
+    text-size-adjust: auto;
+    
+}
+
+.works-image{
+    position: relative;
+}
+
+.works-latest-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.works-latest-text{
+    position: absolute;
+    top: 50%;
+    color: #000000;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: -50px;
+    text-decoration: underline;
+
+}
+.works-latest-descr-text{
+
+    position: absolute;
+    top: 50%;
+    color: #000000;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: -5px;
+
+}
+
+.works-image{
+    position: relative;
+}
+
+.works-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.works-past-text{
+    position: absolute;
+    top: 50%;
+    color: #000000;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: -50px;
+    text-decoration: underline;
+
+}
+.works-past-descr-text{
+
+    position: absolute;
+    top: 50%;
+    color: #000000;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: -5px;
+
+}
+
+.about-me-image{
+    position: relative;
+}
+
+.about-me-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.about-me-text{
+    position: absolute;
+    top: 50%;
+    color: #000000;
+    padding: 20px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: -50px;
+
+}
+
+.footer-bottom{
+    background-color: white;
+    color: #000000;
+
+}
+
+.footer-container{
+    width: 300%;
+    padding: 50px;
+}
