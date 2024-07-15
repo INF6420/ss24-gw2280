@@ -176,13 +176,75 @@ img {
 
 }
 
-.footer-bottom{
-    background-color: white;
+.label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 5px;
     color: #000000;
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
 
 }
+.contact-form {
+    text-align: center;
+    margin-top: 20px;
+}
 
-.footer-container{
-    width: 300%;
-    padding: 50px;
+
+.form-input {
+    border: white 2px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1cm;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    width: calc(100%-22px);
+}
+
+.form-input:focus {
+    outline: none;
+    border: 2px solid #261f17;
+    width: 100%;
+}
+
+[type="submit"] {
+    background: rgb(230, 119, 137);
+    color: #261f17;
+    padding: 10px 20px;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.textarea.form-input {
+    resize: vertical;
+}
+
+.submit-button:hover {
+    background-color: #f0f0f0;
+}
+
+.submit-button:active {
+    transform: scale(0.95);
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    margin: -1cm 0 1.5cm;
+}
+
+footer {
+    margin-top: auto; 
+    background-color: white;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
 }
