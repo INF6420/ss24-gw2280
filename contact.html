@@ -11,7 +11,7 @@
     <header>
         <h1>Shakera Zaman's Portfolio</h1>
         <nav class="mainmenu">
-            <a href="index.html" class="site-name"><img src="" alt=""></a>
+            <a href="index.html" class="site-name"></a>
             <ul class="main-nav">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="works.html">Works</a></li>
@@ -21,23 +21,24 @@
         </nav>
     </header>
     <main>
-        <form action="https://formspree.io/f/mrbzblkq" method="post" class="validate">
+        <div class="contact-form-container">
+            <form action="https://formspree.io/f/mrbzblkq" method="post" class="validate">
            
-            <label for="name" class="label">Name</label>
-            <input id="name" type="text" name="name" class="form-input" maxlength="20"
-            required>
+                <label for="name" class="label">Name</label>
+                <input id="name" type="text" name="name" class="form-input" maxlength="20"
+                required>
 
-            <label for="email" class="label">Email</label>
-            <input id="email" type="email" name="_replyto" class="form-input" maxlength="20" 
-            required>
+                <label for="email" class="label">Email</label>
+                <input id="email" type="email" name="_replyto" class="form-input" maxlength="20" 
+                required>
 
-            <label for="message" class="label">Message</label>
-            <textarea id="message" name="message"
-            class="form-input" rows="4" required></textarea>
+                <label for="message" class="label">Message</label>
+                <textarea id="message" name="message"
+                class="form-input" rows="4" required></textarea>
 
-            <input type="submit" value="Send" class="submit-button">
-          </form>
-
+                <input type="submit" value="Send" class="submit-button">
+            </form>
+        </div>
     </main>
     <footer>
         <div class="footer-containter">
@@ -48,7 +49,6 @@
             <p>Copyright &copy;</p>
         </div>
     </footer>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
