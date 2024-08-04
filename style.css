@@ -15,21 +15,21 @@ body {
     min-height: 100vh;
 }
 
-
 header {
     background-color: white;
     padding: 20px;
+    width: 1000%;
     text-align: left;
     font-size: larger;
     color: #e87693;
-    background-image: url();
+
 }
 
 
 nav {
     background-color: #d48795;
     color:#d48795;
-    text-align: center;
+    text-align: left;
     padding: 5px;
    
 }
@@ -69,7 +69,8 @@ img {
 
 
 .main-menu {
-    position: relative;
+    padding-top: 120px;
+    padding-bottom: 50px;
 
 
 }
@@ -173,9 +174,12 @@ img {
     border-radius: 10px;
     overflow: hidden;
     margin-top: 50px;
+    margin-bottom: 0;
     width: 1000px;
-    height: 500px;
+    height: auto;
+    position: relative;
     margin-left: 150px;
+
 
 }
 
@@ -183,23 +187,29 @@ img {
     flex: 1;
     padding: 20px;
 
+
 }
+
 
 .left-page {
     border-right: 1px solid #ccc;
     margin-left: 50px;
-    
+   
 }
+
 
 .right-page {
     border-left: 1px solid #ccc;
 
+
 }
+
 
 .works-text-container, .works-image-container {
     max-width: 100%;
     margin: 20px;
 }
+
 
 .works-text-container h2 {
     font-size: 1.5em;
@@ -211,17 +221,26 @@ img {
     line-height: 1.6;
     color: black;
     margin-bottom: 10px;
+
+}
+
+.works-caption {
+    line-height: 2;
+    color: #724553;
+    text-align: center;
 }
 
 .works-image-container img {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    align-content: center;
+    text-align: center;
 
 }
+
 
 .caption {
     font-size: 0.9em;
@@ -230,9 +249,21 @@ img {
     align-content: center;
 }
 
+
 @media (max-width: 768px) {
-    .works-container {
+    .journal-page {
+        flex-direction: column;
         width: 100%;
+    }
+
+    .works-nav {
+        position: static;
+        display: flex;
+        justify-content: center;
+        top: auto;
+        left: auto;
+        padding: 10px;
+        border-radius: 0;
     }
 }
 
@@ -240,13 +271,16 @@ img {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: 19%; /* adjusts height of nav */
-    right: 190px; /* centers nav */
     padding: 10px;
     border-radius: 10px;
     z-index: 2;
-    transform: translateY(-5%);
+    top: -5%;
+    z-index: 10;
+    width: 100%;
+    left: 21%;
+
 }
+
 .works-nav .tab {
     color: #333;
     text-decoration: none;
@@ -257,9 +291,13 @@ img {
 }
 
 
+
+
 .works-nav .tab1 {
     background-color: #3e989b
 };
+
+
 
 
 .works-nav .tab2 {
@@ -267,9 +305,13 @@ img {
 }
 
 
+
+
 .works-nav .tab2 {
     background-color: #6c63bd;
 }
+
+
 
 
 .works-nav .tab3 {
@@ -277,9 +319,13 @@ img {
 }
 
 
+
+
 .works-nav .tab4 {
     background-color: #e9bd7a;
 }
+
+
 
 
 .works-nav .tab5 {
@@ -287,9 +333,13 @@ img {
 }
 
 
+
+
 .works-nav .tab:hover {
     background-color: #ddd;
 }
+
+
 
 
 .works-nav .active {
@@ -303,6 +353,9 @@ img {
     max-width: 1200px;
     margin: 20px;
     justify-content: center;
+    gap: 0px;
+    margin-left: 20%;
+    margin-top: 100px;
 
 }
 
@@ -362,7 +415,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 1px;
-    margin-top: 20%;
+    margin-top: 22%;
+    position: relative;
 
 }
 
@@ -394,23 +448,23 @@ img {
 
 .info-container {
     display: flex;
-    max-width: 800px;
+    max-width: 1200px;
     background-color: transparent;
-    border: 1px;
-    border-radius: 5px;
     overflow: hidden;
-    width: 1200px;
+    width: 100%;
     height: 800px;
-    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 20px;
 
 }
   
 .info-image-container {
     flex: 1;
-    position: relative;
-    margin-top: 25%;
-    margin-left: 100px;
-    width: 1500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
 
 }
 
@@ -425,22 +479,32 @@ img {
 
 .info-divider {
     width: 1px;
-    background-color: #ccc;
+    background-color: #83122a;
 
 }
 
 .info-text-container {
     flex: 2;
     padding: 20px;
-    text-align: center;
     background: pink;
     color: #660F1E;
 
 }
 
-.info-text-container h2 {
+.info-text-container h1 {
     margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
 }
+
+.info-text-container p {
+    margin-top: 10%;
+    line-height: 2;
+    margin-left: 5px;
+    text-align: left;
+}
+
 
 .resume-container {
     text-align: center;
@@ -449,15 +513,15 @@ img {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px lightgray;
-    margin-top: 20px;
+    margin-top: 50px;
     height: 400px;
     align-content: center;
     align-items: center;
-    margin-left: 350px;
+    margin-left: 400px;
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .resume-options {
@@ -492,6 +556,21 @@ h1 {
     margin-top: 20px;
 
 }
+
+.contact-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .contact-form {
     text-align: center;
     margin-top: 20px;
@@ -523,6 +602,7 @@ h1 {
     font-size: 16px;
     cursor: pointer;
     letter-spacing: 1px;
+    margin-top: 20px;
 }
 
 .textarea.form-input {
@@ -544,11 +624,17 @@ h1 {
 .error-message {
     color: red;
     margin: -1cm 0 1.5cm;
+    text-align: center;
 }
 
 footer {
     background-color: white;
     color: #000000;
-    text-align: center;
-    padding: 10px 0;
+    border-top: 1px solid white;
+    text-align: left;
+    padding: 20px;
+    margin-top: 120px;
+    width: 1000%;
+    position: absolute;
+
 }
